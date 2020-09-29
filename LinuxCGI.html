@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>  
+	<meta charset="utf-8" />
+  <title>LinuxCGI.html</title>
+  <link rel = "stylesheet"
+   href = "CSSfileforcgi.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+<body>
+  <h1>
+    WELCOME TO Redhat 8 LINUX Command CENTER </h1>
+  <br>
+  <br>
+  <br>
+  <br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQWPIxo-3uQUgByVlAku4vgXQGTOsI-Na216A&usqp=CAU" alt="REDHAT 8 LINUX IMAGE" />
+  <br>
+  <br>
+  <br>
+
+  <form action="http://192.168.1.103/cgi-bin/cgiapp.py">
+    <h2 class="cl">Basic LINUX command portal</h2><br><br>
+    <h4>Enter your NAME : </h4>
+    <i class="fa fa-user" style="font-size:30px;"></i><input type="text" name="usid" required style="font-size:20px;" placeholder="user id" />
+    <br>
+    <br>
+    <h4>Enter PASSWORD : </h4>
+    <i class="fa fa-lock" style="font-size:30px;"></i><input type="password" name="pwd" required style="font-size:20px;" placeholder="password" />
+    <br><br><br><br><br><br>
+
+    <h2>You can type your required command here or select the below options </h2>
+    <h4>Enter your command: </h4>
+    <input type="text" name="cmd" />
+    <br>
+    <br>
+    <h2>OR</h2>
+    <h3>OPTION list:</h3>
+    <p><b>Storage Details</b></p><input type="radio" name="opt" value="df -h" /><br>
+    <p><b>Memory Management Details</b></p><input type="radio" name="opt" value="free -m" /><br>
+
+    <p><b>Network Details</b></p><input type="radio" name="opt" value="ifconfig" /><br>
+
+    <p><b>Create new directory</b></p><input type="radio" name="opt" value="mkdir" /><br>
+
+    <p><b>List all existing files</b></p><input type="radio" name="opt" value="ls" /><br>
+
+
+    <p><b>View Current date and time</b></p><input type="radio" name="opt" value="date" /><br>
+
+    <p><b>View calender of current month</b></p><input type="radio" name="opt" value="cal" /><br><br>
+
+    <h3>If you have selected 4th option:</h3>
+    <p><b>Enter directory name : </b></p><input type="text" name="fname" /><br><br>
+
+    <input type="SUBMIT" />
+</form>
+</body>
+</html>
